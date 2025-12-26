@@ -1,67 +1,117 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Happy New Year</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-      color: #eaeaea;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-      padding: 40px 0;
-    }
+<meta charset="UTF-8">
+<title>Happy New Year</title>
 
-    .card {
-      background: rgba(0, 0, 0, 0.65);
-      padding: 45px 40px;
-      border-radius: 18px;
-      max-width: 460px;
-      box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+    color: #de0505;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-    h1 {
-      font-size: 34px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
+  .container {
+    width: 90%;
+    max-width: 480px;
+    background: rgba(18, 3, 103, 0.65);
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+  }
 
-    p {
-      font-size: 17px;
-      line-height: 1.8;
-      margin-bottom: 18px;
-      color: #dcdcdc;
-    }
+  .screen {
+    display: none;
+    animation: fade 0.5s ease;
+  }
 
-    .highlight {
-      font-style: italic;
-      color: #ffffff;
-    }
+  .screen.active {
+    display: block;
+  }
 
-    .from {
-      margin-top: 30px;
-      font-size: 14px;
-      font-style: italic;
-      color: #aaaaaa;
-    }
-  </style>
-  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+textarea {
+  width: 100%;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.08)
+  border: 1px solid #aaa;
+
+}
+
+  p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: none;
+    border: 1px solid #aaa;
+    color: #eaeaea;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #eaeaea;
+    color: #000;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .audio-list audio {
+    display: block;
+    margin: 12pk 0;
+  }
+
+  .back {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
 </head>
-<body>
-  <div class="card">    
-    <h1>Happy New Year, Nadine!</h1>
 
+<body>
+
+<div class="container">
+
+  <!-- SCREEN 0 -->
+  <div class="screen active">
+    <h1>Happy New Year</h1>
     <p>
-      Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginan kamu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik bgt wkwkwk. Aku selalu bersyukur bisa ngeliat kamu jadi versi terbaik dari diri kamu. Kamu pantas buat dapetin semua yang terbaik di hidup kamu. Kamu itu orang yang lembut, kuat, and full of kindness. Di umur kamu dan tahun yang baru ini, aku berharap kamu semakin dideketin sama semua impian kamu. Dan apapun yang kamu hadapi, "No matter what you do, you'll always be in my heart". Welcome 2026!
+       Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginan kamu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik bgt wkwkwk. Aku selalu bersyukur bisa ngeliat kamu jadi versi terbaik dari diri kamu. Kamu pantas buat dapetin semua yang terbaik di hidup kamu. Kamu itu orang yang lembut, kuat, and full of kindness. Di umur kamu dan tahun yang baru ini, aku berharap kamu semakin dideketin sama semua impian kamu. Dan apapun yang kamu hadapi, "No matter what you do, you'll always be in my heart". Welcome 2026!
     </p>
 
     <p>
-      Aku tau, ninggalin aku kemarin ga segampang itu, dan bahkan kamu pun pasti ngerasa berat buat lakuin hal itu. Tapi rasa cape kamu udah melebihi itu. Kamu udah cape ngedikte aku, kamu udah cape debat sama aku, dan hal lainnya yang emang disebabkan oleh aku sendiri. Aku sendiri emang ngerasa hal yang nyakitin hati aku  di tahun 2025 adalah tau fakta kalau aku nyakitin hati kamu... im really really sorry about that. Even kamu udah maafin pun, aku masih ngerasa "faklaahhh".
+         Aku tau, ning(sebagian teks hilang)
     </p>
 
     <p>
@@ -69,13 +119,234 @@
     </p>
 
     <p>
-      Funfact, aku udah buletin tekad aku buat ga cukur rambut aku (yang cukurnya tuh nyukur bgt) selama aku blom move on sama kamu. Kecuali udah melanggar aturan prodi wkwk. Pokonya selama kamu liat rambut aku gondrong yang udah kaya morgann laaahh, itu berarti aku blom move on.
+      Funfact, aku udah buletin tekad aku buat ga cukur rambut ak(sebagian teks ilang lagi ehehe).  Pokonya selama ka(sebagian ilang lagi dan lagi hehehe)
+    </p>
+
+    <p>
+      sorry banyak yang ilang, kamu harus bahagia pas buka ini^^
     </p>
 
     <div class="from">
       With Love, Ali.
     </div>
+    <button onclick="next()">Next</button>
   </div>
 
-</body>
-</html>
+  <!-- SCREEN 1 -->
+  <div class="screen">
+    <p>
+      Aku cuma berharap di tahun ini kita bisa balik lagi kaya sebelumnya. Makanya waktu tau kamu sedih setiap ketemu aku (kaya pas di terminal), aku tu juga ikut sedih sebenernya. Tapi kalau aku juga keliatan sedih, ntar siapa dong yang nguatin diantara kita WKWKWKWK. Dann ini sorryyy 11/12 mirip sama magazine"an yang kemarin aku buatt #iziinn
+    </p>
+    <button onclick="prev()">← Back</button>
+    <button onclick="next()">Next</button>
+  </div>
+
+<!-- SCREEN 2 (MENU) -->
+  <div class="screen">
+    <p>
+      Rekap semua yang menurut aku berkaitan sama kamu hehe, bagian pesan tolong isi curahan hati kamu dan harapan kamu buat di tahun ini!
+    </p>
+
+    <button onclick="go(3)">📜 Pesan</button>
+    <button onclick="go(4)">🖼️ Foto</button>
+    <button onclick="go(5)">🎵 Musik</button>
+    <button onclick="go(6)">Next</button>
+
+    <button class="back" onclick="prev()">← Back</button>
+  </div>
+
+<!-- SCREEN 3 -->
+  <div class="screen">
+    <p>
+     FILL ITT
+    </p>
+
+    <textarea id="pesanDia" placeholder="Harapan kamu buat aku, kamu, dan kita"></textarea>
+
+    <button class="back" onclick="go(2)">← Kembali ke Menu</button>
+  </div>
+
+<!-- SCREEN 4 -->
+  <div class="screen">
+    <br>
+    <br>
+    <br>
+    <p>terima kasih bryan barcelona sudah mewakili</p>
+    <img src="c:\Users\USER\Downloads\wow.jpeg">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <img src="c:\Users\USER\Downloads\n.jpeg">
+    <p>idiihh sok sibuk tuh si botakk</p>
+    <br> <br>
+    <img src="c:\Users\USER\Downloads\nad.jpeg">
+    <p>ini lucuuuu aaa kaya sweet bgt</p>
+    <br> <br>
+    <img src="c:\Users\USER\Downloads\nad.JPG.jpeg">
+    <p>udqh beres tuh digitasinya si botakk</p>
+    <br> <br>
+    <img src="c:\Users\USER\Downloads\na.jpeg">
+    <p>ini masih digitasi, tapi narsis wle</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\nadi.jpeg">
+    <p>FOTO PERTAMA KITAAAA</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\nadin.jpeg">
+    <p>yah mati gaya tuh si pea</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\nadine.jpeg">
+    <p>YAALLAH KAKU BGT INI FOTO KEDUA KITAA HAHAHA</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\nadin.JPG.jpeg">
+    <p>jujur plengernya dapet bgt</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\nadi.JPG.jpeg">
+    <p>FASDFDSADGADGFGSDB ILY NADINE</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\na.JPG.jpeg">
+    <p>thanks selalu nemenin aku waktu itu....</p>
+    <br> <br> <br>
+    <img src="c:\Users\USER\Downloads\n.JPG.jpeg">
+    <p>kaku lagi tuh si botak</p>
+    <br><br><br><br><br><br><br>
+
+    <p>bonussss selebtok</p>
+    <video controls>
+      <source src="c:\Users\USER\Downloads\tiktokan.mp4">
+    </video>
+    <video controls>
+      <source src="c:\Users\USER\Downloads\fit.mp4">
+    </video>
+
+    <button class="back" onclick="go(2)">← Kembali ke Menu</button>
+  </div>
+
+<!-- SCREEN 5 -->
+  <div class="screen">
+    <p>
+      Beberapa lagu yang menurut aku ngegambarin aku ke kamu
+    </p>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>V
+
+    <img src="c:\Users\USER\Downloads\pt.jpg">
+    <audio controls>
+       <source src="c:\Users\USER\Downloads\Payung Teduh -  Mari Bercerita [Lyrics] - Wicak Lyrics.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+   
+
+    <img src="c:\Users\USER\Downloads\f.jpeg">
+    <audio controls>
+      <source src="c:\Users\USER\Downloads\Flower - FLUCTUS.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="c:\Users\USER\Downloads\L.jpg">
+    <audio controls>
+      <source src="c:\Users\USER\Downloads\LANY - you! (official video) - LANYVEVO.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="c:\Users\USER\Downloads\duarr.jpeg">
+    <audio controls>
+      <source src="c:\Users\USER\Downloads\Bunga Citra Lestari - Pernah Muda  Official Music Video - Aquarius Musikindo.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+
+    
+    <script>
+      document.querySelectorAll("audio").forEach(audio => {
+        audio.addEventListener("play", () => {
+          document.querySelectorAll("audio").forEach(a => {
+            if (a !== audio) a.pause();
+          });
+        });
+      });
+    </script>
+
+    <button class="back" onclick="go(2)">← Kembali ke Menu</button>
+  </div>
+
+<!-- SCREEN 6 -->
+ <div class="screen">
+  <p>
+    Jadiii, kira-kira kamu mau jalin hubungan bareng aku lagi gaa??
+  </p>
+
+  <button onclick="go(2)">← Kembali ke Menu</button>
+  <button onclick="go(7)">MAU</button>
+  <button onclick="go(8)">mau juga hehe</button>
+ </div>
+
+<!-- SCREEN 7 -->
+ <div class="screen">
+  <p>
+    HOREEEEE, makasih banyak Nadine. Emang paul partohap relate kann kata aku juga WKWKWKKWK. 
+  </p>
+
+  <button class="back" onclick="go(6)">← Kembali ke Menu</button>
+ </div>
+
+<!-- SCREEN 8 -->
+ <div class="screen">
+  <p>
+    Makasih udah pencet ini juga. AYOOO KITA JALANI HIDUP INI BARENG-BARENG DENGAN PRINSIP KITA YAITU TIKAM,HANTAM, LALU AYAM-AYAM!!! 
+  </p>
+
+  <button class="back" onclick="go(6)">← Kembali ke Menu</button>
+ </div>
+
+ </div>
+
+<script>
+  const screens = document.querySelectorAll('.screen');
+  let current = 0;
+
+  function show(index) {
+    screens[current].classList.remove('active');
+    current = index;
+    screens[current].classList.add('active');
+  }
+
+  function next() {
+    if (current < screens.length - 1) show(current + 1);
+  }
+
+function prev() {
+    if (current > 0) show(current - 1);
+  }
+
+  function go(index) {
+    show(index);
+  }
+  
+</script>
+ 
+<script>
+  const checkboxes = document.querySelectorAll('.opsi input');
+
+  // LOAD PILIHAN
+  const saved = JSON.parse(localStorage.getItem('opsi_dia')) || [];
+  checkboxes.forEach(cb => {
+    if (saved.includes(cb.value)) cb.checked = true;
+  });
+
+  // SIMPAN SAAT DIUBAH
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      const selected = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.value);
+      localStorage.setItem('opsi_dia', JSON.stringify(selected));
+    });
+  });
+</script>
+
+<script>
+  // SIMPAN PESAN 
+  const textarea = document.getElementById("pesanDia");
+  if (textarea) {
+    textarea.value = localStorage.getItem("pesan_dia") ||"";
+
+    textarea.addEventListener("input", () => {
+      localStorage.setItem("pesan_dia", textarea.value);
+    }); 
+  }
+  </script>
+
+</script>
