@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Happy New Year</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+    color: #de0505;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+    background: rgba(18, 3, 103, 0.65);
+    padding: 40px;
+    min-height: 100svh;
+    display: flex;
+    border-radius: 18px;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .screen {
+    display: none;
+    animation: fade 0.5s ease;
+  }
+
+  .section{
+    min-height: 100svh;
+  }
+
+  .screen.active {
+    display: block;
+  }
+
+  h1 {
+    font-size: clamp(22px, 6vw, 32px);
+    margin-bottom: 20px;
+  }
+
+  textarea {
+  width: 100%;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #aaa;
+  }
+
+  p {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: none;
+    border: 1px solid #aaa;
+    color: #eaeaea;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #eaeaea;
+    color: #000;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+
+  audio {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .audio-list audio {
+    display: block;
+    margin: 12pk 0;
+  }
+
+  .back {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SCREEN 0 -->
+  <div class="screen active">
+    <h1>Happy New Year</h1>
+    <p>
+      Hari ini aku pengen kamu ngerasain semua hal positif dan keajaiban yang cuma bisa didapetin kalo kamu ada di dunia ini. Semoga segala keinginan kamu tercapai, apalagi yang kocak-kocak dan gak biasa, karena kamu tuh unik bgt wkwkwk. Aku selalu bersyukur bisa ngeliat kamu jadi versi terbaik dari diri kamu. Kamu pantas buat dapetin semua yang terbaik di hidup kamu. Kamu itu orang yang lembut, kuat, and full of kindness. Di umur kamu dan tahun yang baru ini, aku berharap kamu semakin dideketin sama semua impian kamu. Dan apapun yang kamu hadapi, "No matter what you do, you'll always be in my heart". Welcome to 2026!
+    </p>
+
+    <p>
+      Aku tau, ninggali <span style="color: #ffffff;">(sebagian teks hilang)</span>. Pokonya, makasih. kamu yang memotivasi aku buat lebih baik lagi, kamu yang memotivasi aku buat lebih berani lagi, dan banyak hal yang bikin aku lebih dewasa lagi. 
+    </p>
+
+    <p>
+      Aku bakal jadi the best version of me di 2026 ini. Aku berubah buat diri aku, karena kamu. Aku mau kamu nemuin cinta yang emang bisa selalu memahami gimana kamu ingin dicintai, tapi <span style="color:rgb(39, 255, 1);font-style:italic;font-weight:bold;text-decoration: underline;"> aku gamau yang nyanggupin itu cowo lain. Jadi aku pasti bakal mantesin diri buat sama kamu dan selalu nunggu kamu selama apapun. </span> 
+    </p>
+
+    <p>
+      Funfact, aku udah buletin tekad aku buat ga cukur rambut ak<span style="color: #ffffff;">(sebagian teks ilang lagi ehehe)</span>. Pokonya selama rambut ak<span style="color: #ffffff;">(sebagian ilang lagi dan lagi hehehe)</span> 
+    </p>
+
+    <p>
+      sorry banyak yang ilang, kamu harus bahagia pas buka ini^^. dan jangan sampe cinlok di p2m y, ckup di pkm, itupun sama es teler slurpp.
+    </p>
+
+    <div class="from">
+      With Love, Ali.
+    </div>
+    <button onclick="next()">Next</button>
+  </div>
+
+  <!-- SCREEN 1 -->
+  <div class="screen">
+    <p>
+      Mungkin sekarang kamu lagi buka ini di Jogja, ntah malioboro, ataupun wastukencana. Tapi yang pasti, kalau aku jabarin semua makasih aku ke kamu, mungkin bakal lebih panjang dari <a href="https://saig.upi.edu/sejarah-berdirinya-prodi-sains-informasi-geografi-di-universitas-pendidikan-indonesia/">Cerpen si Botak</a> (buka di new tab). Dann ini sorryyy 11/12 mirip sama magazine"an yang kemarin aku buatt #iziinn
+    </p>
+    <button onclick="prev()">← Back</button>
+    <button onclick="next()">Next</button>
+  </div>
+
+<!-- SCREEN 2 (MENU) -->
+  <div class="screen">
+    <p>
+      Rekap semua yang menurut aku berkaitan sama kamu hehe, bagian pesan bebas apa ajalah, kesimpennya di kamu doang, soalnya aku ga bisa bikin javascriptnya huhuu. tapi bakal kesimpen di device kamu da. aman bgt
+    </p>
+
+    <button onclick="go(3)">📜 Pesan</button>
+    <button onclick="go(4)">🖼️ Foto</button>
+    <button onclick="go(5)">🎵 Musik</button>
+    <button onclick="go(6)">Next</button>
+
+    <button class="back" onclick="prev()">← Back</button>
+  </div>
+
+<!-- SCREEN 3 -->
+  <div class="screen">
+    <p>
+     FILL ITT
+    </p>
+
+    <textarea id="pesanDia" placeholder="Harapan kamu buat aku, kamu, dan kita"></textarea>
+
+    <button class="back" onclick="go(2)">← Back</button>
+  </div>
+
+<!-- SCREEN 4 -->
+  <div class="screen">
+    <br>
+    <br>
+    <br>
+    <p>terima kasih bryan barcelona sudah mewakili</p>
+    <img src="./public/images/wow.jpeg">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <img src="./public/images/n.jpeg" alt="foto kita di kopken pasteur yang aku lagi ngerjain digitasi kamu">
+    <p>idiihh sok sibuk tuh si botakk</p>
+    <br> <br>
+    <img src="./public/images/nad.jpeg" alt="foto bedua difotoin aji">
+    <p>ini lucuuuu aaa kaya sweet bgt</p>
+    <br> <br>
+    <img src="./public/images/lalala.jpeg" alt="udah beres digitasinya wkwk">
+    <p>udqh beres tuh digitasinya si botakk</p>
+    <br> <br>
+    <img src="./public/images/na.jpeg" alt="narsis lu tak">
+    <p>ini masih digitasi, tapi narsis wle</p>
+    <br> <br> <br>
+    <img src="./public/images/nadi.jpeg" alt="foto lawson hmz">
+    <p>FOTO PERTAMA KITAAAA</p>
+    <br> <br> <br>
+    <img src="./public/images/nadin.jpeg" alt="foto favorit kamu">
+    <p>yah mati gaya tuh si pea</p>
+    <br> <br> <br>
+    <img src="./public/images/nadine.jpeg" alt="poppaaa">
+    <p>YAALLAH KAKU BGT INI FOTO KEDUA KITAA HAHAHA</p>
+    <br> <br> <br>
+    <img src="./public/images/plenger.jpeg" alt="jangan karena aku sunda---">
+    <p>jujur plengernya dapet bgt</p>
+    <br> <br> <br>
+    <img src="./public/images/korsa.jpeg" alt="miror selfie di jhouse pake korsa">
+    <p>FASDFDSADGADGFGSDB ILY NADINE</p>
+    <br> <br> <br>
+    <img src="./public/images/arcgis.jpeg" alt="kamu vc nemenin aku arcgis">
+    <p>thanks selalu nemenin aku waktu itu....</p>
+    <br> <br> <br>
+    <img src="./public/images/berdua.jpeg" alt="di poppa jugaakk">
+    <p>kaku lagi tuh si botak</p>
+    <br><br><br><br><br><br><br>
+
+    <p>bonussss selebtok</p>
+    <video controls>
+      <source src="./public/video/tiktokan.mp4" type="video/mp4">
+    </video>
+    
+    <video controls>
+      <source src="./public/video/fit.mp4" type="video/mp4">
+    </video>
+
+    <button class="back" onclick="go(2)">← Back</button>
+  </div>
+
+<!-- SCREEN 5 -->
+  <div class="screen">
+    <p>
+      Beberapa lagu yang menurut aku ngegambarin aku ke kamu
+    </p>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>V
+
+    <img src="./public/images/pt.jpg">
+    <audio controls>
+       <source src="./public/audio/pt.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+   
+
+    <img src="./public/images/f.jpeg">
+    <audio controls>
+      <source src="./public/audio/flwr.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="./public/images/L.jpg">
+    <audio controls>
+      <source src="./public/audio/you.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="./public/images/duarr.jpeg">
+    <audio controls>
+      <source src="./public/audio/bcl.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="./public/images/lilsom.jpeg">
+    <audio controls>
+      <source src="./public/audio/jumbo.mp3">
+    </audio> |<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+
+    <img src="./public/images/lemon.jpeg">
+    <audio controls>
+      <source src="./public/audio/lemon.mp3">
+    </audio>
+
+    <script>
+      document.querySelectorAll("audio").forEach(audio => {
+        audio.addEventListener("play", () => {
+          document.querySelectorAll("audio").forEach(a => {
+            if (a !== audio) a.pause();
+          });
+        });
+      });
+    </script>
+
+    <button class="back" onclick="go(2)">← Back</button>
+  </div>
+
+<!-- SCREEN 6 -->
+ <div class="screen">
+  <p>
+    Jadiii, kira-kira kamu mau jalin hubungan bareng aku lagi gaa??
+  </p>
+  
+  <button onclick="go(7)">MAU</button>
+  <button onclick="go(8)">mau juga hehe</button>
+  <button onclick="">gamau</button>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <button onclick="go(9)">Next</button>
+  <button onclick="go(2)">← Kembali ke Menu</button>
+  <p><span style="font-size: x-small;">akwokow gabisa dipencet</span></p>
+ </div>
+
+<!-- SCREEN 7 -->
+ <div class="screen">
+  <p>
+    HOREEEEE, makasih banyak Nadine. Emang paul partohap relate kann kata aku juga WKWKWKKWK. 
+  </p>
+
+  <button class="back" onclick="go(6)">← Back</button>
+ </div>
+
+<!-- SCREEN 8 -->
+ <div class="screen">
+  <p>
+    Makasih udah pencet ini juga. AYOOO KITA JALANI HIDUP INI BARENG-BARENG DENGAN PRINSIP KITA YAITU TIKAM,HANTAM, LALU AYAM-AYAM!!! 
+  </p>
+
+  <button class="back" onclick="go(6)">← Back</button>
+ </div>
+
+ <!-- SCREEN 9 -->
+  <div class="screen">
+    <p><span style="font-size: larger;color: blue; font-weight: bolder; text-decoration: underline;">SEKIAAAANNNN</span></p>
+    <p>
+      <span style="color: #ffffff;">
+        Segituu ajaa yang bisa aku kasiih, mungkin ini cuma style simpel, tapi aku udah berusaha semaksimal mungkin buat ngerjain ini. Aku ga minta buat apa, aku cuma pengen, web ini bisa kamu liat dan bisa tersimpan buat nantinya kalau semisal kamu ingin ngeliat kenang-kenangan, tanpa harus nyelem galeri lagi wkwkwk. Di page terakhir ini, aku cuma bisa berterima kasih, entah kepada kamu, kepada Allah, upi, bandung, ataupun mamim yang udah ngelahirin kamu ke dunia ini. Entah bakal berapa kali dan seberapa banyak aku berterima kasih ke kamu, <span style="color: #de0505; font-weight: bolder; text-decoration: underline;">karena kamu memang sepantas itu buat nerimain ini</span>. Dengan aku yang masih banyak bikin kamu kesel, drain energy, atau bahkan nyebut istigfar, aku cuma bisa minta maaf dan melakukan segala hal yang aku bisa. Semaksimal mungkin. Doain aku buat jadi lebih baik lagi dan lebih pantas buat bersanding sama kamu ya, Nadine. Aku bener-bener berharap bisa tumbuh dan besar bareng kamu. entah ini kaya ngelamar atau apa, tapi aku cuma ngutarain isi hati aku WKWKWK. Satu hal yang kamu harus tanam di diri kamu, jangan pernah ngerasa kalau kamu ga berguna, kamu ga worth it buat hidup atau living life, ataupun hal buruk lainnya. <span style="color: #de0505; font-weight: bolder; text-decoration: underline;">Kamu berhak dan deserve buat nerima semua kebaikan sekecil apapun di dunia</span>. Jangan pernah ngerasa sendiri, ada mamim, ada risda, rizka, dan orang yang gamau stop ngejar kamu ini, <span style="color: rgb(255, 251, 0);">Ali</span>. Tolong selalu libatkan aku di setiap detail kecil hidup kamu. Jangan pernah nganggep kalau kamu ngeribetin aku, <span style="color: #de0505; font-weight: bolder; text-decoration: underline;">kamu memang pantas buat nerimain hal seperti ini</span>.
+      </span>
+    </p>
+
+    <p>
+      <span style="color: lawngreen; font-size: larger; font-weight: bolder;">HAPPY NEW YEAR, NADINE!!!</span>
+    </p>
+
+    <div class="from">
+      i love u, Nadine.
+    </div>
+
+    <button onclick="go(1)">Homepage</button>
+    <button onclick="go(6)">← Back</button>
+  </div>
+ </div>
+
+<script>
+  const screens = document.querySelectorAll('.screen');
+  let current = 0;
+
+  function show(index) {
+    screens[current].classList.remove('active');
+    current = index;
+    screens[current].classList.add('active');
+  }
+
+  function next() {
+    if (current < screens.length - 1) show(current + 1);
+  }
+
+function prev() {
+    if (current > 0) show(current - 1);
+  }
+
+  function go(index) {
+    show(index);
+  }
+  
+</script>
+ 
+<script>
+  const checkboxes = document.querySelectorAll('.opsi input');
+
+  // LOAD PILIHAN
+  const saved = JSON.parse(localStorage.getItem('opsi_dia')) || [];
+  checkboxes.forEach(cb => {
+    if (saved.includes(cb.value)) cb.checked = true;
+  });
+
+  // SIMPAN SAAT DIUBAH
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      const selected = Array.from(checkboxes)
+        .filter(c => c.checked)
+        .map(c => c.value);
+      localStorage.setItem('opsi_dia', JSON.stringify(selected));
+    });
+  });
+</script>
+
+<script>
+  // SIMPAN PESAN 
+  const textarea = document.getElementById("pesanDia");
+  if (textarea) {
+    textarea.value = localStorage.getItem("pesan_dia") ||"";
+
+    textarea.addEventListener("input", () => {
+      localStorage.setItem("pesan_dia", textarea.value);
+    }); 
+  }
+  </script>
